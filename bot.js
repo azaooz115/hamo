@@ -11,8 +11,15 @@ client.on('message', message => {
       }
 });
 
-client.on('ready', () => {
-  client.user.setGame(`RMDAN KREM`,'https://www.twitch.tv/v5bz');
+lient.on('ready', () => {
+   console.log(`~~~~~~~~~~~~~~~~~`);
+   console.log(`Logging into Discord`);
+   console.log(`~~~~~~~~~~~~~~~~~~~~~`);
+   console.log(`on  ${client.guilds.size} Servers `);
+   console.log(`~~~~~~~~~~~~~~~~~~~~~~~~`);
+   console.log(`Logged in as ${client.user.tag}!`);
+   client.user.setGame(`hamo | RMDAN KREM `,"http://twitch.tv/y04zgamer")
+   client.user.setStatus("dnd")
 });
 
 client.on('message', message => {
