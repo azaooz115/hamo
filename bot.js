@@ -13,14 +13,7 @@ client.on('message', message => {
 
 
 
-client.on('ready', () => {
-  client.user.setGame('#help | #invite','https://www.twitch.tv/peery13');
-  console.log('---------------');
-  console.log(' Bot Is Online')
-  console.log('---------------')
-});
-    
- 
+
    
 const devs = ['424241514072244226' , '' , '' , ''];
 const adminprefix = "#";
