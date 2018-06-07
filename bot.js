@@ -12,11 +12,22 @@ client.on('message', message => {
 });
 
 
-client.on('message', message => {
- if (message.content === x_x) {
-  client.user.setGame(`LINKS | i love PL`, 'https://www.twitch.tv/hix')
+client.on('ready', function(){
+    var ms = 60000 ;
+    var setGame = ['LINKS | i love PL','LINKS | i love PL','LINKS | i love PL| LINKS | i love PL','LINKS | i love PL'];
+    var i = -1;
+    var j = 0;
+    setInterval(function (){
+        if( i == -1 ){
+            j = 1;
+        }
+        if( i == (setGame.length)-1 ){
+            j = -1;
+        }
+        i = i+j;
+        client.user.setGame(setGame[i],`http://www.twitch.tv/GamerzBot`);
+    }, ms);
 
- }
 });
 
 // THIS  MUST  BE  THIS  WAY
